@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header {
+    color: #FF6B82;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.option {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.discount {
+    color: white;
+    background: #FF6B82;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+.price {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.selection {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selection .headers {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.selection .row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 8px;
+}
+.selection select {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    appearance: none;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    min-width: 100px;
+}
+.btn {
+    background: #FF6B82;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.option.selected {
+    border: 2px solid #FF6882;
+}
